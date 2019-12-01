@@ -26,6 +26,7 @@ gulp.task('scripts', gulp.series(
 // Umbrella styles tasks for preview ----
 // Runs js lint and compilation
 // --------------------------------------
+
 gulp.task('styles', gulp.series(
   'scss:lint',
   'scss:compile'
@@ -69,7 +70,7 @@ gulp.task('serve', gulp.parallel(
 // Runs a sequence of task on start
 // --------------------------------------
 gulp.task('dev', gulp.series(
-  'clean',
+  //'clean',
   'copy-assets',
   'sassdoc',
   'serve'

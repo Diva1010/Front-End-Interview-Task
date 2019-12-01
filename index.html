@@ -1,5 +1,50 @@
-{# If using nunjucks you may want to extend our base nunjucks template using #}
-  {% extends "template.njk" %}
-  {# you can see the contents of template.njk here: 
-  https://github.com/LBHackney-IT/LBH-frontend/blob/master/package/lbh/template.njk #}
+
+<!DOCTYPE html>
+<head>
+  <title>Hackney</title>
+  <link rel="stylesheet" href="public/app.css">
+  <link rel="icon" 
+      type="image/png" 
+      href="">
+      {% from "lbh-header/macro.njk" import lbhHeader %}
+      {% from "lbh-button/macro.njk" import lbhButton %}
+</head>
+<body>
+ 
+  {{ lbhHeader({
+    "isHome": true,
+    "homepageUrl": "/",
+    "isFixed": true
+  }) }}
+<div class="main-body">
+    <h2 class="lbh-heading">Welcome to London Borough of Hackney !</h2>
+
+    <p class="main-heading lbh-body-m">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </p>
+    
+
+    
+    {{ lbhButton({
+      "text": "Know More..."
+    }) }}
+    
+    <div class="lbh-image-component">
+        <figure class="lbh-image-component-figure">
+            <img class="lbh-image-component-image" src="public/images/Imgcomponent.jpg" alt="logo">
+            <figcaption class="lbh-body-s lbh-image-component-figcaption">Hackney Borough Building</figcaption>
+          </figure>
+          <p class="image-description lbh-body-m">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
+    </div>
+</div>
+
+</body>
+</html>
 

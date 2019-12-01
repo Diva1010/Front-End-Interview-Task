@@ -1,0 +1,30 @@
+
+@import "node_modules/lbh-frontend/lbh/all";
+
+.main-body{
+    padding: 3%;
+}
+.lbh-image-component{    
+    text-align: center;
+    display: flex;
+    margin: 50px 0;
+}
+.lbh-image-component-figure{
+    display: inline-block;
+}
+.lbh-image-component-image{
+    width:200px;
+    height: 200px;
+
+}
+.lbh-heading{
+    text-align: center;
+}
+.lbh-body-m{
+    text-align: justify;
+    margin: 10px;
+}
+.lbh-image-component-figcaption{
+    color: #00664f;
+    font-weight: 800;
+}
